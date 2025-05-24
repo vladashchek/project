@@ -1,0 +1,87 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1c url('path/to/old-paper-texture.jpg') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.preloader.fade-out {
+    opacity: 0;
+}
+
+.preloader-content {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    border: 2px solid #c5a572;
+}
+
+.eagle-loader {
+    width: 200px;
+    height: 200px;
+    background: url('path/to/double-headed-eagle.png') center/contain no-repeat;
+    animation: eaglePulse 2s infinite;
+}
+
+.loader-bar {
+    width: 300px;
+    height: 4px;
+    background: rgba(197, 165, 114, 0.3);
+    border-radius: 2px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #c5a572;
+    animation: progressAnimation 2s ease-in-out infinite;
+}
+
+.preloader-text {
+    font-family: 'Old Standard TT', serif;
+    color: #c5a572;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.historical-ornament {
+    width: 100%;
+    height: 30px;
+    background: url('path/to/russian-ornament.png') center/contain repeat-x;
+    margin: 20px 0;
+}
+
+@keyframes eaglePulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes progressAnimation {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+}
+
+@keyframes textFade {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}

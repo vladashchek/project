@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>История России: Путешествие во времени</title>
+
+  <!-- Стили и библиотеки -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+
+<div class="preloader">
+    <div class="preloader-content">
+        <div class="historical-ornament"></div>
+        <div class="eagle-loader"></div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+        <div class="preloader-text">
+            Путешествие в историю России
+        </div>
+        <div class="historical-ornament"></div>
+    </div>
+</div>
+
+<!-- Навигация -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Главная</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cities">Города</a></li>
+        <li class="nav-item"><a class="nav-link" href="#timeline">История</a></li>
+        <li class="nav-item"><a class="nav-link" href="#notable-people">Личности</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Отзывы</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Герой -->
+<section class="hero" id="home">
+  <div class="hero-content container">
+    <h1>Путешествие по городам России</h1>
+    <p>Откройте для себя богатую историю и культуру великой страны</p>
+    <a href="#about" class="btn-modern" style="text-decoration: none;">Начать путешествие</a>
+  </div>
+</section>
+
+<!-- О нас -->
+<section id="about" class="about-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+        <img src="images/about.jpg" alt="Команда" class="img-fluid rounded shadow-lg">
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <h2 class="mb-4 text-white">О нас</h2>
+        <p class="text-light fs-5">
+          Наша цель — создать уникальное веб-путешествие по историческим городам России. Мы объединяем
+          культуру, архитектуру и технологии, чтобы оживить историю прямо у вас на экране.
+        </p>
+        <div class="row mt-4">
+          <div class="col-sm-6 mb-3" data-aos="zoom-in">
+            <div class="feature-box p-3 rounded">
+              <i class="fas fa-map-marked-alt fa-2x text-accent mb-2"></i>
+              <h5>Интерактивность</h5>
+              <p>Карты, фото и истории для каждого города.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="feature-box p-3 rounded">
+              <i class="fas fa-clock fa-2x text-accent mb-2"></i>
+              <h5>Хронология</h5>
+              <p>Временная шкала с важнейшими событиями.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="feature-box p-3 rounded">
+              <i class="fas fa-camera-retro fa-2x text-accent mb-2"></i>
+              <h5>Фотогалерея</h5>
+              <p>Атмосферные фотографии городов России.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="300">
+            <div class="feature-box p-3 rounded">
+              <i class="fas fa-users fa-2x text-accent mb-2"></i>
+              <h5>Наша команда</h5>
+              <p>Историки, дизайнеры, разработчики ❤️</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Города -->
+<section id="cities" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="fade-up">Исторические города</h2>
+    <div class="city-filters mb-4 text-center" data-aos="fade-up">
+      <button class="btn-modern active" data-filter="all">Все</button>
+      <button class="btn-modern" data-filter="ancient">Древние</button>
+      <button class="btn-modern" data-filter="imperial">Имперские</button>
+      <button class="btn-modern" data-filter="modern">Современные</button>
+    </div>
+    <div class="row city-grid"></div>
+  </div>
+</section>
+
+<!-- Временная шкала -->
+<section id="timeline" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="fade-up">История городов</h2>
+    <div class="timeline"></div>
+  </div>
+</section>
+
+<section id="notable-people" class="notable-people-section py-5">
+  <div class="container">
+    <h2 class="text-center text-light mb-4" data-aos="fade-up">Выдающиеся личности</h2>
+    <p class="text-center text-muted mb-5" data-aos="fade-up" data-aos-delay="100">
+      Основатели городов и герои, изменившие ход истории России.
+    </p>
+
+    <div class="notable-grid">
+      <!-- Карточка 1 -->
+      <div class="person-modern-card" data-tilt data-aos="zoom-in">
+        <div class="person-image" style="background-image: url('images/dolgor.jpg');"></div>
+        <div class="person-details">
+          <h3>Юрий Долгорукий</h3>
+          <p>Основатель Москвы (1147)</p>
+        </div>
+      </div>
+
+      <!-- Карточка 2 -->
+      <div class="person-modern-card" data-tilt data-aos="zoom-in" data-aos-delay="100">
+        <div class="person-image" style="background-image: url('images/perv.jpg');"></div>
+        <div class="person-details">
+          <h3>Пётр I Великий</h3>
+          <p>Основатель Санкт-Петербурга</p>
+        </div>
+      </div>
+
+      <!-- Карточка 3 -->
+      <div class="person-modern-card" data-tilt data-aos="zoom-in" data-aos-delay="200">
+        <div class="person-image" style="background-image: url('images/monomax.png');"></div>
+        <div class="person-details">
+          <h3>Владимир Мономах</h3>
+          <p>Князь Древней Руси</p>
+        </div>
+      </div>
+
+      <!-- Карточка 4 -->
+      <div class="person-modern-card" data-tilt data-aos="zoom-in" data-aos-delay="300">
+        <div class="person-image" style="background-image: url('images/bulgar.jpg');"></div>
+        <div class="person-details">
+          <h3>Булгарские правители</h3>
+          <p>Основатели Казани</p>
+        </div>
+      </div>
+
+      <!-- Карточка 5 -->
+      <div class="person-modern-card" data-tilt data-aos="zoom-in" data-aos-delay="400">
+        <div class="person-image" style="background-image: url('images/Tatishchev.png');"></div>
+        <div class="person-details">
+          <h3>Василий Татищев</h3>
+          <p>Основал Екатеринбург</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="testimonials" class="testimonials-section py-5">
+  <div class="container">
+    <h2 class="text-center text-white mb-5">Отзывы путешественников</h2>
+    <div class="swiper testimonials-swiper">
+      <div class="swiper-wrapper">
+
+        <!-- Отзыв 1 -->
+        <div class="swiper-slide">
+          <div class="testimonial-card shadow">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">“Впечатляющий сайт! Я будто сам побывал в каждом городе. Уникальный визуальный опыт!”</p>
+            <div class="testimonial-author">
+              <img src="images/daria.jpg" alt="Дарья">
+              <div class="author-info">
+                <h5>Дарья</h5>
+                <span>Историк-любитель</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Отзыв 2 -->
+        <div class="swiper-slide">
+          <div class="testimonial-card shadow">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">“Супер визуализация, особенно галерея. Всё чётко, удобно и красиво!”</p>
+            <div class="testimonial-author">
+              <img src="images/irina.jpg" alt="Ирина">
+              <div class="author-info">
+                <h5>Ирина</h5>
+                <span>Путешественник</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Отзыв 3 -->
+        <div class="swiper-slide">
+          <div class="testimonial-card shadow">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">“Очень красиво и вдохновляюще! Хочу посетить все эти города!”</p>
+            <div class="testimonial-author">
+              <img src="images/valeria.jpg" alt="Валерия">
+              <div class="author-info">
+                <h5>Валерия</h5>
+                <span>Дизайнер</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Стрелки и пагинация -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination mt-4"></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Запись на экскурсию -->
+<section id="booking" class="py-5" style="background-color: var(--dark-bg); color: white;">
+  <div class="container">
+    <h2 class="text-center text-white mb-4" data-aos="fade-up">Записаться на экскурсию</h2>
+    <p class="text-center mb-5" data-aos="fade-up" data-aos-delay="100" style="color: white;">
+  Хотите окунуться в прошлое? Заполните форму и отправляйтесь в уникальное путешествие по городам России.
+</p>
+
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form id="booking-form" class="p-4 rounded shadow" style="background-color: var(--light-bg);" data-aos="fade-up" data-aos-delay="200">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Ваше имя</label>
+              <input type="text" class="form-control" id="name" placeholder="Валерия" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Электронная почта</label>
+              <input type="email" class="form-control" id="email" placeholder="@mail.ru" required>
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Телефон</label>
+              <input type="tel" class="form-control" id="phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <div class="col-md-6">
+              <label for="city" class="form-label">Выберите город</label>
+              <select class="form-select" id="city" required>
+                <option selected disabled>Выберите город</option>
+                <option value="moscow">Москва</option>
+                <option value="petersburg">Санкт-Петербург</option>
+                <option value="kazan">Казань</option>
+                <option value="ekb">Екатеринбург</option>
+                <option value="novgorod">Новгород</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Дополнительные пожелания</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Ваши пожелания или вопросы..."></textarea>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <button type="submit" class="btn btn-lg btn-modern">Записаться</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- Модальное окно -->
+<div class="modal fade" id="cityModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- ========================
+     FOOTER
+======================== -->
+<footer class="footer-section">
+  <div class="container py-5">
+    <div class="row text-white">
+
+      <!-- Блок 1: О сайте -->
+      <div class="col-md-4 mb-4">
+        <h5>О проекте</h5>
+        <p class="text-muted">Путешествие по историческим городам России с картами, фактами, личностями и культурой. Создано с заботой и любовью к истории.</p>
+      </div>
+
+      <!-- Блок 2: Быстрая навигация -->
+      <div class="col-md-4 mb-4">
+        <h5>Навигация</h5>
+        <ul class="footer-links">
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#cities">Города</a></li>
+          <li><a href="#timeline">История</a></li>
+          <li><a href="#notable-people">Личности</a></li>
+          <li><a href="#testimonials">Отзывы</a></li>
+        </ul>
+      </div>
+
+      <!-- Блок 3: Контакты -->
+      <div class="col-md-4 mb-4">
+        <h5>Контакты</h5>
+        <ul class="footer-contacts">
+          <li><i class="fas fa-envelope me-2"></i> history@russia.ru</li>
+          <li><i class="fas fa-phone me-2"></i> +7 (495) 123-45-67</li>
+          <li class="mt-2">
+            <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Низ футера -->
+    <div class="footer-bottom text-center mt-4 text-muted">
+      &copy; 2024 История России | Все права защищены
+    </div>
+  </div>
+</footer>
+
+
+<button id="scrollToTopBtn" title="Наверх" style="display:none;">
+  ↑
+</button>
+
+
+
+<!-- Скрипты -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.3/vanilla-tilt.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="scripts/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
+</body>
+</html>
