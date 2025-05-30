@@ -3,12 +3,12 @@
   color: white;
 }
 
-.about-section h2 {
+.about-section__title { /* Было .about-section h2 */
   font-weight: 700;
   font-size: 2.5rem;
 }
 
-.about-section p {
+.about-section__description { /* Было .about-section p */
   font-size: 1rem;
   color: #ecf0f1;
 }
@@ -28,10 +28,10 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.feature-box i {
+.feature-box__icon { /* Было .feature-box i */
   display: block;
 }
 
-.text-accent {
+.text-accent { /* Этот класс оставлен без изменений, так как является утилитарным */
   color: var(--accent-color);
 }

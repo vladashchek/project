@@ -3,7 +3,7 @@
   color: white;
 }
 
-.testimonial-card {
+.testimonial-card { /* Остается блоком */
   background-color: white;
   color: #2c3e50;
   border-radius: 15px;
@@ -20,26 +20,26 @@
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 }
 
-.quote-icon {
+.testimonial-card__quote-icon { /* Было .quote-icon */
   font-size: 2rem;
   color: #3498db;
   margin-bottom: 1rem;
 }
 
-.testimonial-text {
+.testimonial-card__text { /* Было .testimonial-text */
   font-size: 1.1rem;
   font-style: italic;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
 
-.testimonial-author {
+.testimonial-card__author { /* Было .testimonial-author */
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.testimonial-author img {
+.testimonial-card__author-image { /* Было .testimonial-author img - убедитесь, что в HTML img имеет этот класс */
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -47,27 +47,34 @@
   border: 2px solid #3498db;
 }
 
-.author-info h5 {
+.testimonial-card__author-info { /* Было .author-info */
+  /* display: flex; /* (Optional: if it was flex, it will stay) */
+  /* flex-direction: column; /* (Optional: if it was column, it will stay) */
+}
+
+.testimonial-card__author-name { /* Было .author-info h5 */
   margin: 0;
   font-size: 1.1rem;
   font-weight: 600;
 }
 
-.author-info span {
+.testimonial-card__author-role { /* Было .author-info span */
   font-size: 0.9rem;
   color: #7f8c8d;
 }
 
-.swiper-button-next, .swiper-button-prev {
+/* Классы Swiper.js, которые мы сделали элементами секции для контекста */
+.testimonials-section__swiper-button-next, /* Было .swiper-button-next */
+.testimonials-section__swiper-button-prev { /* Было .swiper-button-prev */
   color: white;
 }
 
-.swiper-pagination-bullet {
+.testimonials-section__swiper-pagination-bullet { /* Было .swiper-pagination-bullet */
   background-color: #ecf0f1;
   opacity: 0.6;
 }
 
-.swiper-pagination-bullet-active {
+.testimonials-section__swiper-pagination-bullet-active { /* Было .swiper-pagination-bullet-active */
   background-color: #3498db;
   opacity: 1;
 }

@@ -1,10 +1,10 @@
-.gallery {
+.gallery { /* Это остается блоком */
   columns: 3;
   column-gap: 20px;
   padding: 2rem;
 }
 
-.gallery-item {
+.gallery__item { /* Было .gallery-item */
   break-inside: avoid;
   margin-bottom: 20px;
   border-radius: 15px;
@@ -12,12 +12,12 @@
   position: relative;
 }
 
-.gallery-item img {
+.gallery__item-image { /* Было .gallery-item img - предполагается, что вы добавите класс к тегу img: <img class="gallery__item-image" ...> */
   width: 100%;
   display: block;
   transition: all 0.3s ease;
 }
 
-.gallery-item:hover img {
+.gallery__item:hover .gallery__item-image { /* Было .gallery-item:hover img */
   transform: scale(1.1);
 }

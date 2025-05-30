@@ -3,35 +3,35 @@
   color: white;
 }
 
-.footer-section h5 {
+.footer-section__heading { /* Было .footer-section h5 */
   font-size: 1.2rem;
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
-.footer-links,
-.footer-contacts {
+.footer-section__links, /* Было .footer-links */
+.footer-section__contacts { /* Было .footer-contacts */
   list-style: none;
   padding-left: 0;
 }
 
-.footer-links li a {
+.footer-section__link { /* Было .footer-links li a - теперь стилизуем сам элемент-ссылку */
   color: #ccc;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.footer-links li a:hover {
+.footer-section__link:hover { /* Было .footer-links li a:hover */
   color: var(--accent-color);
 }
 
-.footer-contacts li {
+.footer-section__contact-item { /* Было .footer-contacts li */
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
   color: #ccc;
 }
 
-.social-icon {
+.footer-section__social-icon { /* Было .social-icon */
   display: inline-block;
   color: #ccc;
   background: rgba(255, 255, 255, 0.06);
@@ -42,12 +42,12 @@
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-.social-icon:hover {
+.footer-section__social-icon:hover { /* Было .social-icon:hover */
   color: white;
   background: var(--accent-color);
 }
 
-.footer-bottom {
+.footer-section__bottom { /* Было .footer-bottom */
   border-top: 1px solid rgba(255,255,255,0.1);
   font-size: 0.9rem;
   padding-top: 1rem;

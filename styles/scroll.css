@@ -1,4 +1,4 @@
-#scrollToTopBtn {
+.scroll-to-top { /* Было #scrollToTopBtn */
   position: fixed;
   bottom: 40px;
   right: 40px;
@@ -14,6 +14,6 @@
   transition: opacity 0.3s ease;
 }
 
-#scrollToTopBtn:hover {
+.scroll-to-top:hover { /* Было #scrollToTopBtn:hover */
   background-color: var(--accent-hover-color, #0056b3);
 }

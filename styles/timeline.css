@@ -14,24 +14,24 @@
   transform: translateX(-50%);
 }
 
-.timeline-item {
+.timeline__item { /* Было .timeline-item */
   margin-bottom: 4rem;
   position: relative;
   width: 50%;
   padding: 0 3rem;
 }
 
-.timeline-item:nth-child(odd) {
+.timeline__item:nth-child(odd) { /* Было .timeline-item:nth-child(odd) */
   left: 0;
   text-align: right;
 }
 
-.timeline-item:nth-child(even) {
+.timeline__item:nth-child(even) { /* Было .timeline-item:nth-child(even) */
   left: 50%;
   text-align: left;
 }
 
-.timeline-dot {
+.timeline__item-dot { /* Было .timeline-dot */
   position: absolute;
   width: 20px;
   height: 20px;
@@ -40,10 +40,10 @@
   top: 0;
 }
 
-.timeline-item:nth-child(odd) .timeline-dot {
+.timeline__item:nth-child(odd) .timeline__item-dot { /* Было .timeline-item:nth-child(odd) .timeline-dot */
   right: -10px;
 }
 
-.timeline-item:nth-child(even) .timeline-dot {
+.timeline__item:nth-child(even) .timeline__item-dot { /* Было .timeline-item:nth-child(even) .timeline-dot */
   left: -10px;
 }

@@ -18,16 +18,16 @@
 
 
 <div class="preloader">
-    <div class="preloader-content">
-        <div class="historical-ornament"></div>
-        <div class="eagle-loader"></div>
-        <div class="loader-bar">
-            <div class="loader-progress"></div>
+    <div class="preloader__content">
+        <div class="preloader__ornament"></div>
+        <div class="preloader__eagle-loader"></div>
+        <div class="preloader__loader-bar">
+            <div class="preloader__loader-progress"></div>
         </div>
-        <div class="preloader-text">
+        <div class="preloader__text">
             Путешествие в историю России
         </div>
-        <div class="historical-ornament"></div>
+        <div class="preloader__ornament"></div>
     </div>
 </div>
 
@@ -54,9 +54,9 @@
 
 <!-- Герой -->
 <section class="hero" id="home">
-  <div class="hero-content container">
-    <h1>Путешествие по городам России</h1>
-    <p>Откройте для себя богатую историю и культуру великой страны</p>
+  <div class="hero__content container">
+    <h1 class="hero__title">Путешествие по городам России</h1>
+    <p class="hero__description">Откройте для себя богатую историю и культуру великой страны</p>
     <a href="#about" class="btn-modern" style="text-decoration: none;">Начать путешествие</a>
   </div>
 </section>
@@ -66,41 +66,41 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-        <img src="images/about.jpg" alt="Команда" class="img-fluid rounded shadow-lg">
+        <img src="images/about.jpg" alt="Команда" class="img-fluid rounded shadow-lg about-section__image">
       </div>
       <div class="col-lg-6" data-aos="fade-left">
-        <h2 class="mb-4 text-white">О нас</h2>
-        <p class="text-light fs-5">
+        <h2 class="mb-4 text-white about-section__title">О нас</h2>
+        <p class="text-light fs-5 about-section__description">
           Наша цель — создать уникальное веб-путешествие по историческим городам России. Мы объединяем
           культуру, архитектуру и технологии, чтобы оживить историю прямо у вас на экране.
         </p>
         <div class="row mt-4">
           <div class="col-sm-6 mb-3" data-aos="zoom-in">
             <div class="feature-box p-3 rounded">
-              <i class="fas fa-map-marked-alt fa-2x text-accent mb-2"></i>
-              <h5>Интерактивность</h5>
-              <p>Карты, фото и истории для каждого города.</p>
+              <i class="feature-box__icon fas fa-map-marked-alt fa-2x text-accent mb-2"></i>
+              <h5 class="feature-box__title">Интерактивность</h5>
+              <p class="feature-box__description">Карты, фото и истории для каждого города.</p>
             </div>
           </div>
           <div class="col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="100">
             <div class="feature-box p-3 rounded">
-              <i class="fas fa-clock fa-2x text-accent mb-2"></i>
-              <h5>Хронология</h5>
-              <p>Временная шкала с важнейшими событиями.</p>
+              <i class="feature-box__icon fas fa-clock fa-2x text-accent mb-2"></i>
+              <h5 class="feature-box__title">Хронология</h5>
+              <p class="feature-box__description">Временная шкала с важнейшими событиями.</p>
             </div>
           </div>
           <div class="col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="200">
             <div class="feature-box p-3 rounded">
-              <i class="fas fa-camera-retro fa-2x text-accent mb-2"></i>
-              <h5>Фотогалерея</h5>
-              <p>Атмосферные фотографии городов России.</p>
+              <i class="feature-box__icon fas fa-camera-retro fa-2x text-accent mb-2"></i>
+              <h5 class="feature-box__title">Фотогалерея</h5>
+              <p class="feature-box__description">Атмосферные фотографии городов России.</p>
             </div>
           </div>
           <div class="col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="300">
             <div class="feature-box p-3 rounded">
-              <i class="fas fa-users fa-2x text-accent mb-2"></i>
-              <h5>Наша команда</h5>
-              <p>Историки, дизайнеры, разработчики ❤️</p>
+              <i class="feature-box__icon fas fa-users fa-2x text-accent mb-2"></i>
+              <h5 class="feature-box__title">Наша команда</h5>
+              <p class="feature-box__description">Историки, дизайнеры, разработчики ❤️</p>
             </div>
           </div>
         </div>
@@ -110,77 +110,77 @@
 </section>
 
 <!-- Города -->
-<section id="cities" class="py-5">
+<section id="cities" class="cities-section py-5">
   <div class="container">
-    <h2 class="text-center mb-5" data-aos="fade-up">Исторические города</h2>
+    <h2 class="text-center mb-5 cities-section__title" data-aos="fade-up">Исторические города</h2>
     <div class="city-filters mb-4 text-center" data-aos="fade-up">
       <button class="btn-modern active" data-filter="all">Все</button>
       <button class="btn-modern" data-filter="ancient">Древние</button>
       <button class="btn-modern" data-filter="imperial">Имперские</button>
       <button class="btn-modern" data-filter="modern">Современные</button>
     </div>
-    <div class="row city-grid"></div>
+    <div class="row cities-section__grid city-grid"></div>
   </div>
 </section>
 
 <!-- Временная шкала -->
-<section id="timeline" class="py-5">
+<section id="timeline" class="timeline-section py-5">
   <div class="container">
-    <h2 class="text-center mb-5" data-aos="fade-up">История городов</h2>
-    <div class="timeline"></div>
+    <h2 class="text-center mb-5 timeline-section__title" data-aos="fade-up">История городов</h2>
+    <div class="timeline-section__container timeline"></div>
   </div>
 </section>
 
 <section id="notable-people" class="notable-people-section py-5">
   <div class="container">
-    <h2 class="text-center text-light mb-4" data-aos="fade-up">Выдающиеся личности</h2>
-    <p class="text-center text-muted mb-5" data-aos="fade-up" data-aos-delay="100">
+    <h2 class="text-center text-light mb-4 notable-people-section__title" data-aos="fade-up">Выдающиеся личности</h2>
+    <p class="text-center text-muted mb-5 notable-people-section__description" data-aos="fade-up" data-aos-delay="100">
       Основатели городов и герои, изменившие ход истории России.
     </p>
 
-    <div class="notable-grid">
+    <div class="notable-people-section__grid">
       <!-- Карточка 1 -->
-      <div class="person-modern-card" data-tilt data-aos="zoom-in">
-        <div class="person-image" style="background-image: url('images/dolgor.jpg');"></div>
-        <div class="person-details">
-          <h3>Юрий Долгорукий</h3>
-          <p>Основатель Москвы (1147)</p>
+      <div class="person-card" data-tilt data-aos="zoom-in">
+        <div class="person-card__image" style="background-image: url('images/dolgor.jpg');"></div>
+        <div class="person-card__details">
+          <h3 class="person-card__name">Юрий Долгорукий</h3>
+          <p class="person-card__role">Основатель Москвы (1147)</p>
         </div>
       </div>
 
       <!-- Карточка 2 -->
-      <div class="person-modern-card" data-tilt data-aos="zoom-in" data-aos-delay="100">
-        <div class="person-image" style="background-image: url('images/perv.jpg');"></div>
-        <div class="person-details">
-          <h3>Пётр I Великий</h3>
-          <p>Основатель Санкт-Петербурга</p>
+      <div class="person-card" data-tilt data-aos="zoom-in" data-aos-delay="100">
+        <div class="person-card__image" style="background-image: url('images/perv.jpg');"></div>
+        <div class="person-card__details">
+          <h3 class="person-card__name">Пётр I Великий</h3>
+          <p class="person-card__role">Основатель Санкт-Петербурга</p>
         </div>
       </div>
 
       <!-- Карточка 3 -->
-      <div class="person-modern-card" data-tilt data-aos="zoom-in" data-aos-delay="200">
-        <div class="person-image" style="background-image: url('images/monomax.png');"></div>
-        <div class="person-details">
-          <h3>Владимир Мономах</h3>
-          <p>Князь Древней Руси</p>
+      <div class="person-card" data-tilt data-aos="zoom-in" data-aos-delay="200">
+        <div class="person-card__image" style="background-image: url('images/monomax.png');"></div>
+        <div class="person-card__details">
+          <h3 class="person-card__name">Владимир Мономах</h3>
+          <p class="person-card__role">Князь Древней Руси</p>
         </div>
       </div>
 
       <!-- Карточка 4 -->
-      <div class="person-modern-card" data-tilt data-aos="zoom-in" data-aos-delay="300">
-        <div class="person-image" style="background-image: url('images/bulgar.jpg');"></div>
-        <div class="person-details">
-          <h3>Булгарские правители</h3>
-          <p>Основатели Казани</p>
+      <div class="person-card" data-tilt data-aos="zoom-in" data-aos-delay="300">
+        <div class="person-card__image" style="background-image: url('images/bulgar.jpg');"></div>
+        <div class="person-card__details">
+          <h3 class="person-card__name">Булгарские правители</h3>
+          <p class="person-card__role">Основатели Казани</p>
         </div>
       </div>
 
       <!-- Карточка 5 -->
-      <div class="person-modern-card" data-tilt data-aos="zoom-in" data-aos-delay="400">
-        <div class="person-image" style="background-image: url('images/Tatishchev.png');"></div>
-        <div class="person-details">
-          <h3>Василий Татищев</h3>
-          <p>Основал Екатеринбург</p>
+      <div class="person-card" data-tilt data-aos="zoom-in" data-aos-delay="400">
+        <div class="person-card__image" style="background-image: url('images/Tatishchev.png');"></div>
+        <div class="person-card__details">
+          <h3 class="person-card__name">Василий Татищев</h3>
+          <p class="person-card__role">Основал Екатеринбург</p>
         </div>
       </div>
     </div>
@@ -192,20 +192,20 @@
 
 <section id="testimonials" class="testimonials-section py-5">
   <div class="container">
-    <h2 class="text-center text-white mb-5">Отзывы путешественников</h2>
-    <div class="swiper testimonials-swiper">
+    <h2 class="text-center text-white mb-5 testimonials-section__title">Отзывы путешественников</h2>
+    <div class="swiper testimonials-section__swiper">
       <div class="swiper-wrapper">
 
         <!-- Отзыв 1 -->
         <div class="swiper-slide">
           <div class="testimonial-card shadow">
-            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-            <p class="testimonial-text">“Впечатляющий сайт! Я будто сам побывал в каждом городе. Уникальный визуальный опыт!”</p>
-            <div class="testimonial-author">
-              <img src="images/daria.jpg" alt="Дарья">
-              <div class="author-info">
-                <h5>Дарья</h5>
-                <span>Историк-любитель</span>
+            <div class="testimonial-card__quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-card__text">“Впечатляющий сайт! Я будто сам побывал в каждом городе. Уникальный визуальный опыт!”</p>
+            <div class="testimonial-card__author">
+              <img src="images/daria.jpg" alt="Дарья" class="testimonial-card__author-image">
+              <div class="testimonial-card__author-info">
+                <h5 class="testimonial-card__author-name">Дарья</h5>
+                <span class="testimonial-card__author-role">Историк-любитель</span>
               </div>
             </div>
           </div>
@@ -214,13 +214,13 @@
         <!-- Отзыв 2 -->
         <div class="swiper-slide">
           <div class="testimonial-card shadow">
-            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-            <p class="testimonial-text">“Супер визуализация, особенно галерея. Всё чётко, удобно и красиво!”</p>
-            <div class="testimonial-author">
-              <img src="images/irina.jpg" alt="Ирина">
-              <div class="author-info">
-                <h5>Ирина</h5>
-                <span>Путешественник</span>
+            <div class="testimonial-card__quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-card__text">“Супер визуализация, особенно галерея. Всё чётко, удобно и красиво!”</p>
+            <div class="testimonial-card__author">
+              <img src="images/irina.jpg" alt="Ирина" class="testimonial-card__author-image">
+              <div class="testimonial-card__author-info">
+                <h5 class="testimonial-card__author-name">Ирина</h5>
+                <span class="testimonial-card__author-role">Путешественник</span>
               </div>
             </div>
           </div>
@@ -229,13 +229,13 @@
         <!-- Отзыв 3 -->
         <div class="swiper-slide">
           <div class="testimonial-card shadow">
-            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-            <p class="testimonial-text">“Очень красиво и вдохновляюще! Хочу посетить все эти города!”</p>
-            <div class="testimonial-author">
-              <img src="images/valeria.jpg" alt="Валерия">
-              <div class="author-info">
-                <h5>Валерия</h5>
-                <span>Дизайнер</span>
+            <div class="testimonial-card__quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-card__text">“Очень красиво и вдохновляюще! Хочу посетить все эти города!”</p>
+            <div class="testimonial-card__author">
+              <img src="images/valeria.jpg" alt="Валерия" class="testimonial-card__author-image">
+              <div class="testimonial-card__author-info">
+                <h5 class="testimonial-card__author-name">Валерия</h5>
+                <span class="testimonial-card__author-role">Дизайнер</span>
               </div>
             </div>
           </div>
@@ -244,9 +244,9 @@
       </div>
 
       <!-- Стрелки и пагинация -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-pagination mt-4"></div>
+      <div class="swiper-button-prev testimonials-section__swiper-button-prev"></div>
+      <div class="swiper-button-next testimonials-section__swiper-button-next"></div>
+      <div class="swiper-pagination mt-4 testimonials-section__swiper-pagination"></div>
     </div>
   </div>
 </section>
@@ -255,33 +255,33 @@
 
 
 <!-- Запись на экскурсию -->
-<section id="booking" class="py-5" style="background-color: var(--dark-bg); color: white;">
+<section id="booking" class="booking-section py-5" style="background-color: var(--dark-bg); color: white;">
   <div class="container">
-    <h2 class="text-center text-white mb-4" data-aos="fade-up">Записаться на экскурсию</h2>
-    <p class="text-center mb-5" data-aos="fade-up" data-aos-delay="100" style="color: white;">
+    <h2 class="text-center text-white mb-4 booking-section__title" data-aos="fade-up">Записаться на экскурсию</h2>
+    <p class="text-center mb-5 booking-section__description" data-aos="fade-up" data-aos-delay="100" style="color: white;">
   Хотите окунуться в прошлое? Заполните форму и отправляйтесь в уникальное путешествие по городам России.
 </p>
 
 
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <form id="booking-form" class="p-4 rounded shadow" style="background-color: var(--light-bg);" data-aos="fade-up" data-aos-delay="200">
+        <form id="booking-form" class="booking-section__form p-4 rounded shadow" style="background-color: var(--light-bg);" data-aos="fade-up" data-aos-delay="200">
           <div class="row g-3">
             <div class="col-md-6">
-              <label for="name" class="form-label">Ваше имя</label>
-              <input type="text" class="form-control" id="name" placeholder="Валерия" required>
+              <label for="name" class="form-label booking-section__form-label">Ваше имя</label>
+              <input type="text" class="form-control booking-section__form-input" id="name" placeholder="Валерия" required>
             </div>
             <div class="col-md-6">
-              <label for="email" class="form-label">Электронная почта</label>
-              <input type="email" class="form-control" id="email" placeholder="@mail.ru" required>
+              <label for="email" class="form-label booking-section__form-label">Электронная почта</label>
+              <input type="email" class="form-control booking-section__form-input" id="email" placeholder="@mail.ru" required>
             </div>
             <div class="col-md-6">
-              <label for="phone" class="form-label">Телефон</label>
-              <input type="tel" class="form-control" id="phone" placeholder="+7 (___) ___-__-__" required>
+              <label for="phone" class="form-label booking-section__form-label">Телефон</label>
+              <input type="tel" class="form-control booking-section__form-input" id="phone" placeholder="+7 (___) ___-__-__" required>
             </div>
             <div class="col-md-6">
-              <label for="city" class="form-label">Выберите город</label>
-              <select class="form-select" id="city" required>
+              <label for="city" class="form-label booking-section__form-label">Выберите город</label>
+              <select class="form-select booking-section__form-select" id="city" required>
                 <option selected disabled>Выберите город</option>
                 <option value="moscow">Москва</option>
                 <option value="petersburg">Санкт-Петербург</option>
@@ -291,12 +291,12 @@
               </select>
             </div>
             <div class="col-12">
-              <label for="message" class="form-label">Дополнительные пожелания</label>
-              <textarea class="form-control" id="message" rows="3" placeholder="Ваши пожелания или вопросы..."></textarea>
+              <label for="message" class="form-label booking-section__form-label">Дополнительные пожелания</label>
+              <textarea class="form-control booking-section__form-textarea" id="message" rows="3" placeholder="Ваши пожелания или вопросы..."></textarea>
             </div>
           </div>
           <div class="text-center mt-4">
-            <button type="submit" class="btn btn-lg btn-modern">Записаться</button>
+            <button type="submit" class="btn btn-lg btn-modern booking-section__form-submit-button">Записаться</button>
           </div>
         </form>
       </div>
@@ -335,33 +335,33 @@
 
       <!-- Блок 1: О сайте -->
       <div class="col-md-4 mb-4">
-        <h5>О проекте</h5>
-        <p class="text-muted">Путешествие по историческим городам России с картами, фактами, личностями и культурой. Создано с заботой и любовью к истории.</p>
+        <h5 class="footer-section__heading">О проекте</h5>
+        <p class="text-muted footer-section__text">Путешествие по историческим городам России с картами, фактами, личностями и культурой. Создано с заботой и любовью к истории.</p>
       </div>
 
       <!-- Блок 2: Быстрая навигация -->
       <div class="col-md-4 mb-4">
-        <h5>Навигация</h5>
-        <ul class="footer-links">
-          <li><a href="#home">Главная</a></li>
-          <li><a href="#about">О нас</a></li>
-          <li><a href="#cities">Города</a></li>
-          <li><a href="#timeline">История</a></li>
-          <li><a href="#notable-people">Личности</a></li>
-          <li><a href="#testimonials">Отзывы</a></li>
+        <h5 class="footer-section__heading">Навигация</h5>
+        <ul class="footer-section__links">
+          <li class="footer-section__link-item"><a href="#home" class="footer-section__link">Главная</a></li>
+          <li class="footer-section__link-item"><a href="#about" class="footer-section__link">О нас</a></li>
+          <li class="footer-section__link-item"><a href="#cities" class="footer-section__link">Города</a></li>
+          <li class="footer-section__link-item"><a href="#timeline" class="footer-section__link">История</a></li>
+          <li class="footer-section__link-item"><a href="#notable-people" class="footer-section__link">Личности</a></li>
+          <li class="footer-section__link-item"><a href="#testimonials" class="footer-section__link">Отзывы</a></li>
         </ul>
       </div>
 
       <!-- Блок 3: Контакты -->
       <div class="col-md-4 mb-4">
-        <h5>Контакты</h5>
-        <ul class="footer-contacts">
-          <li><i class="fas fa-envelope me-2"></i> history@russia.ru</li>
-          <li><i class="fas fa-phone me-2"></i> +7 (495) 123-45-67</li>
-          <li class="mt-2">
-            <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <h5 class="footer-section__heading">Контакты</h5>
+        <ul class="footer-section__contacts">
+          <li class="footer-section__contact-item"><i class="fas fa-envelope me-2 footer-section__contact-icon"></i> history@russia.ru</li>
+          <li class="footer-section__contact-item"><i class="fas fa-phone me-2 footer-section__contact-icon"></i> +7 (495) 123-45-67</li>
+          <li class="mt-2 footer-section__social-icons">
+            <a href="#" class="footer-section__social-icon"><i class="fab fa-vk"></i></a>
+            <a href="#" class="footer-section__social-icon"><i class="fab fa-telegram"></i></a>
+            <a href="#" class="footer-section__social-icon"><i class="fab fa-instagram"></i></a>
           </li>
         </ul>
       </div>
@@ -369,14 +369,14 @@
     </div>
 
     <!-- Низ футера -->
-    <div class="footer-bottom text-center mt-4 text-muted">
-      &copy; 2024 История России | Все права защищены
+    <div class="footer-section__bottom text-center mt-4 text-muted">
+      &copy; 2025 История России | Все права защищены
     </div>
   </div>
 </footer>
 
 
-<button id="scrollToTopBtn" title="Наверх" style="display:none;">
+<button id="scrollToTopBtn" class="scroll-to-top" title="Наверх" style="display:none;">
   ↑
 </button>
 

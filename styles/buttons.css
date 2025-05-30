@@ -12,7 +12,7 @@
   transition: all 0.3s ease;
 }
 
-.btn-modern span {
+.btn-modern__text { /* Было .btn-modern span - предполагается, что текст кнопки будет обернут в <span class="btn-modern__text"> */
   position: relative;
   z-index: 2;
 }

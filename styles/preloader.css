@@ -17,7 +17,7 @@
     opacity: 0;
 }
 
-.preloader-content {
+.preloader__content { /* Было .preloader-content */
     text-align: center;
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
@@ -25,14 +25,14 @@
     border: 2px solid #c5a572;
 }
 
-.eagle-loader {
+.preloader__eagle-loader { /* Было .eagle-loader */
     width: 200px;
     height: 200px;
     background: url('path/to/double-headed-eagle.png') center/contain no-repeat;
     animation: eaglePulse 2s infinite;
 }
 
-.loader-bar {
+.preloader__loader-bar { /* Было .loader-bar */
     width: 300px;
     height: 4px;
     background: rgba(197, 165, 114, 0.3);
@@ -42,7 +42,7 @@
     overflow: hidden;
 }
 
-.loader-progress {
+.preloader__loader-progress { /* Было .loader-progress */
     position: absolute;
     left: 0;
     top: 0;
@@ -52,7 +52,7 @@
     animation: progressAnimation 2s ease-in-out infinite;
 }
 
-.preloader-text {
+.preloader__text { /* Было .preloader-text */
     font-family: 'Old Standard TT', serif;
     color: #c5a572;
     font-size: 1.5rem;
@@ -61,7 +61,7 @@
     letter-spacing: 2px;
 }
 
-.historical-ornament {
+.preloader__ornament { /* Было .historical-ornament */
     width: 100%;
     height: 30px;
     background: url('path/to/russian-ornament.png') center/contain repeat-x;

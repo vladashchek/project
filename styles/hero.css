@@ -24,13 +24,13 @@
 }
 
 /* Контент */
-.hero-content {
+.hero__content { /* Было .hero-content */
     position: relative;
     z-index: 2;
 }
 
 /* Надписи */
-.hero-content h1 {
+.hero__title { /* Было .hero-content h1 */
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 2rem;
@@ -41,7 +41,7 @@
     animation: fadeInUp 1s ease forwards;
 }
 
-.hero-content p {
+.hero__description { /* Было .hero-content p */
     font-size: 1.5rem;
     margin-bottom: 2rem;
     opacity: 0;
@@ -77,5 +77,3 @@
         transform: translateY(0);
     }
 }
-
-
